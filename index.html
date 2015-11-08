@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>PCorp</title>
+  <link rel="Shortcut Icon" href="img/logo/icono.png"> 
+	<link rel="stylesheet" href="assets/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<!--Menu -->
+<nav>
+  <div class="nav-wrapper white">
+    <a href="#inicio" class="brand-logo" style="padding-left:55px; padding-top:10px;">
+      <img src="img/logo/pcorp_letras.png" width="250" alt="">
+    </a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse">
+      <i class="material-icons blue-text text-darken-2">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="blue-text text-darken-2" href="#inicio">Inicio</a></li>
+      <li><a class="blue-text text-darken-2" href="#servicios">Servicios</a></li>
+      <li><a class="blue-text text-darken-2" href="#proyectos">Proyectos</a></li>
+      <li><a class="blue-text text-darken-2" href="#contacto">Contáctanos</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a class="blue-text text-darken-2" href="#inicio">Inicio</a></li>
+      <li><a class="blue-text text-darken-2" href="#servicios">Servicios</a></li>
+      <li><a class="blue-text text-darken-2" href="#proyectos">Proyectos</a></li>
+      <li><a class="blue-text text-darken-2" href="#contacto">Contáctanos</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div ng-view></div>
+
+
+<!-- Footer -->
+<footer class="page-footer blue darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 m6 s12">
+        <h5 class="white-text">P Corp</h5>
+        <p class="grey-text text-lighten-4">PCORP</p>
+      </div>
+      <div class="col l4 m4 s12">
+        <h5 class="white-text">Enlaces</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#inicio">Inicio</a></li>
+          <li><a class="grey-text text-lighten-3" href="#servicios">Servicios</a></li>
+          <li><a class="grey-text text-lighten-3" href="#proyectos">Proyectos</a></li>
+          <li><a class="grey-text text-lighten-3" href="#contacto">Contáctanos</a></li>
+        </ul>
+      </div>
+      <div class="col l2 m2 s12">
+        <h5 class="white-text">Contáctanos</h5>
+        <ul class="align-right">
+          <li><a class="grey-text text-lighten-3">mvillalobos@pcorp.com.mx</a></li>
+          <li><a class="grey-text text-lighten-3">jmontanez@pcorp.com.mx</a></li>
+          <li><a class="grey-text text-lighten-3">cesparza@pcorp.com.mx</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2015 pechugascorp
+    </div>
+  </div>
+</footer>
+            
+<script src="assets/js/jquery-2.1.4.js"></script>
+<script src="assets/js/materialize.js"></script>
+<script src="assets/js/angular.js"></script>
+<script src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-route.min.js'></script>
+<script src="assets/js/pcorp.js"></script>
+<script>
+   $('.button-collapse').sideNav({
+      menuWidth: 400, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    });
+</script>
+</body>
+</html>
